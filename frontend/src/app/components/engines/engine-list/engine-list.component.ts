@@ -1,12 +1,6 @@
+import { EngineService } from '../../../services/engine.service';
 import { Component, OnInit } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
-
-export interface Lista {
-  id: Number,
-  tag: String,
-  description: String,
-  current: Number
-}
+import { EngineData } from "src/app/interfaces/Engines"
 
 @Component({
   selector: 'app-engine-list',
@@ -14,18 +8,21 @@ export interface Lista {
   styleUrls: ['./engine-list.component.scss']
 })
 export class EngineListComponent implements OnInit {
+  engines: EngineData[] = [];
 
-  displayedColumns = ['tag','description','current', 'action'];
+  displayedColumns = ['tag', 'description', 'current', 'action'];
 
- ELEMENT_DATA: Lista[] = [
-    {id: 1, tag: 'MB311001', description: 'Motor redutor', current:16.1},
-  ];
-
-  dataSource = new MatTableDataSource(this.ELEMENT_DATA)
-
-  constructor() { }
+  constructor(private listService: EngineService){
+    this.getEngines();
+  }
 
   ngOnInit(): void {
+    console.log(this.engines);
+  }
+
+  getEngines(): void {
+    this.listService.getAll().subscribe((engines) => (this.engines = engines));
+    console.log(this.engines);
   }
 
 }
