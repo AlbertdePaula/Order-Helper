@@ -1,0 +1,14 @@
+**GIT
+Iniciar repositório: git init
+git add origin git@.... : Adiciona a origem do repositório
+git status: status dos aqruivos sincronizados   
+git add . : adiciona todos os arquivos untracked à sincoronização
+
+**NPM
+npm init -y: Cria package.json
+npm i json-server: Instalar Json server
+
+Angular Cli
+Instalar Angular CLi: npm i -g @angular/cli
+Help: ng --help
+Criar o projeto: ng new NOME DA PASTA

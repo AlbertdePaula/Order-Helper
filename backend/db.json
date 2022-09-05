@@ -1,0 +1,23 @@
+{
+    "motors": [
+        {
+            "id": 1,
+            "tag": "MR211001",
+            "description": "Motor do elevador EL211001",
+            "current": 2.3
+        },
+        {
+            "id": 2,
+            "tag": "MR211002",
+            "description": "Motor do elevador EL211002",
+            "current": 12.8
+        },
+        {
+            "id": 3,
+            "tag": "MR211002",
+            "description": "Motor do elevador EL211003",
+            "current": 5
+        }
+        
+    ]
+}
