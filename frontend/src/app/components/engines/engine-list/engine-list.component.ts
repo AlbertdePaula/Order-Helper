@@ -10,7 +10,9 @@ import { EngineData } from "src/app/interfaces/Engines"
 export class EngineListComponent implements OnInit {
   engines: EngineData[] = [];
 
-  displayedColumns = ['tag', 'description', 'current', 'action'];
+  displayedColumns = ['tag','action'];
+
+  panelOpenState = false;
 
   constructor(private listService: EngineService){
     this.getEngines();

@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { EngineListComponent } from './components/engines/engine-list/engine-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/template/nav-bar/nav-bar.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NavBarComponent } from './components/template/nav-bar/nav-bar.component
     BrowserAnimationsModule,
     HttpClientModule,
     MatIconModule,
-    NgbModule
+    NgbModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
