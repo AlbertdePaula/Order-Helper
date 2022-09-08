@@ -1,4 +1,42 @@
+<mat-card>
+  <mat-card-title>Novo equipamento</mat-card-title>
+  <form action="">
+      <mat-form-field>
+          <input matInput placeholder="Tag"
+              [(ngModel)]= "engines.tag"
+              name="tag">
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput placeholder="Descrição"
+              [(ngModel)]= "engines.description"
+              name="description">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Corrente"
+            [(ngModel)]= "engines.current"
+            name="current">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Potência"
+          [(ngModel)]= "engines.power"
+          name="power">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="RPM"
+        [(ngModel)]= "engines.rpm"
+        name="rpm">
+</mat-form-field>
+  </form>
+
+<!--   <button mat-raised-button color="primary" (click)="'.'">Salvar</button> -->
+
+<button mat-raised-button>Cancelar</button>
+</mat-card>
+
 <a mat-fab color="warn" [routerLink]="['/engines/engine-create']" class="button-save" aria-label="Example icon button with a bookmark icon">
   <mat-icon>save</mat-icon>
 </a>
-

@@ -2,6 +2,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -18,7 +21,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { PartsComponent } from './components/parts/parts.component';
 import { OrdersComponent } from './components/orders/orders.component';
-import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component'
+import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { EngineCreateComponent } from './components/engines/engine-create/engine
     MatIconModule,
     NgbModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
