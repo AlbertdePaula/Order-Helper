@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 
 export class EngineService {
-  private apiUrl = 'http://localhost:3002/motors';
+  private apiUrl = 'http://localhost:3002/engines';
 
   constructor(private http: HttpClient) { }
 

@@ -14,13 +14,20 @@ import { AppComponent } from './app.component';
 import { EngineListComponent } from './components/engines/engine-list/engine-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/template/nav-bar/nav-bar.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
+import { PartsComponent } from './components/parts/parts.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     EngineListComponent,
     NavBarComponent,
+    PartsComponent,
+    OrdersComponent,
+    EngineCreateComponent,
   ],
   imports: [
     MatTableModule,
@@ -32,7 +39,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     HttpClientModule,
     MatIconModule,
     NgbModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

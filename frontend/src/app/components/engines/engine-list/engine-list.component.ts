@@ -10,7 +10,7 @@ import { EngineData } from "src/app/interfaces/Engines"
 export class EngineListComponent implements OnInit {
   engines: EngineData[] = [];
 
-  displayedColumns = ['tag','action'];
+  displayedColumns = ['tag','description'];
 
   panelOpenState = false;
 

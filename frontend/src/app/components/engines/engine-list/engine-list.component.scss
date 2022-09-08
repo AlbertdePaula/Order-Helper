@@ -2,8 +2,10 @@ table {
   width: 100%;
 }
 
-@media (max-width: 500px) {
-
+@media (min-width: 700px) {
+  .button-add {
+    visibility: hidden;
+  }
 }
 
 .mat-column-action {
@@ -21,7 +23,7 @@ table {
   -webkit-hyphens: auto;
   hyphens: auto;
 
-  background: yellow;
+  //background: yellow;
 }
 
 
@@ -34,11 +36,12 @@ td.mat-cell {
 /* Elemento | http://localhost:4200/ */
 
 
-.mat-expansion-panel-header-title {
-//background: blue;
+.mat-expansion-panel-header {
+//background: green;
 font-size: 0.8rem;
-padding: 0px;
-margin-right: 2px;
+padding: 20px;
+width: 100%;
+border-radius: 10px;
 
 }
 
@@ -47,16 +50,25 @@ margin-right: 2px;
   max-width: 32%;
 }
 
-.mat-expansion-panel-header {
-  //background: red;
-  border-radius: 10px;
-}
-
-.mat-row {
-  height: auto;
-}
-
 .mat-cell {
   padding-right: 0px !important;
+
 }
+
+.button-add {
+  position: fixed;
+  bottom:  10px;
+  right: 10px;
+}
+
+.button-edit {
+  background: rgb(42, 177, 42);
+}
+
+.mat-expansion-panel-header-description {
+  //background: red;
+  margin: 0em;
+
+}
+
 
