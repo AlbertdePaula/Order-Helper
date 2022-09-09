@@ -11,7 +11,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class EngineService {
   private apiUrl = 'http://localhost:3002/engines';
 
-  constructor(private http: HttpClient, private MatSnackBar: MatSnackBar ) {}
+  constructor(private http: HttpClient, private MatSnackBar: MatSnackBar) { }
 
   showMessage(msg: string, isError: boolean = false): void {
     this.MatSnackBar.open(msg, 'Fechar', {
@@ -36,8 +36,15 @@ export class EngineService {
 
   errorHandler(e: any): Observable<any> {
     this.showMessage('Ocorreu um erro!', true);
-    alert ('Backand tá funcionando não meu fii')
+    alert('Backand tá funcionando não meu fii')
     return EMPTY;
   }
 
+  readById(id: string): Observable<EngineData> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<EngineData>(url).pipe(
+      map((obj) => obj),
+      catchError(e => this.errorHandler(e))
+    );
+  }
 }
