@@ -12,3 +12,8 @@ Angular Cli
 Instalar Angular CLi: npm i -g @angular/cli
 Help: ng --help
 Criar o projeto: ng new NOME DA PASTA
+
+Prisma
+yarn add prisma --save--dev: instalar Prisma/CLI
+yarn prisma init: Criar estrutura de arquivos do prisma
+yarn prisma migrate dev: Criar migration

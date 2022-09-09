@@ -1,23 +1,52 @@
 {
-    "motors": [
-        {
-            "id": 1,
-            "tag": "MR211001",
-            "description": "Motor do elevador EL211001",
-            "current": 2.3
-        },
-        {
-            "id": 2,
-            "tag": "MR211002",
-            "description": "Motor do elevador EL211002",
-            "current": 12.8
-        },
-        {
-            "id": 3,
-            "tag": "MR211002",
-            "description": "Motor do elevador EL211003",
-            "current": 5
-        }
-        
-    ]
+  "engines": [
+    {
+      "id": 1,
+      "tag": "MR211001",
+      "description": "Motor do elevador EL211001",
+      "current": 2.3,
+      "power": 8,
+      "rpm": 1380
+    },
+    {
+      "id": 2,
+      "tag": "MR211002",
+      "description": "Motor do elevador EL211002",
+      "current": 12.8,
+      "power": 2,
+      "rpm": 2580
+    },
+    {
+      "id": 3,
+      "tag": "MR211002",
+      "description": "Motor do elevador EL211003",
+      "current": 5,
+      "power": 60,
+      "rpm": 3200
+    },
+    {
+      "id": 4,
+      "tag": "",
+      "description": "",
+      "current": 0,
+      "power": 0,
+      "rpm": 0
+    },
+    {
+      "id": 5,
+      "tag": "M311001",
+      "description": "Bomba de bosta",
+      "current": "10",
+      "power": "20",
+      "rpm": "30"
+    },
+    {
+      "id": 6,
+      "tag": "MR221001",
+      "description": "Elevador de esterco crú",
+      "current": "20",
+      "power": "30",
+      "rpm": "50"
+    }
+  ]
 }

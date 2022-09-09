@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import{MatSnackBarModule} from '@angular/material/snack-bar'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -46,7 +47,8 @@ import { EngineCreateComponent } from './components/engines/engine-create/engine
     MatButtonModule,
     MatCardModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

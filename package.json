@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/AlbertdePaula/Order-Helper.git",
   "author": "Albert de Paula <albert_depaula@yahoo.com.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^4.3.1"
+  }
 }

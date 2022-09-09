@@ -37,6 +37,6 @@
 <button mat-raised-button>Cancelar</button>
 </mat-card>
 
-<a mat-fab color="warn" [routerLink]="['/engines/engine-create']" class="button-save" aria-label="Example icon button with a bookmark icon">
+<a mat-fab color="warn" (click)="createEngine()" class="button-save">
   <mat-icon>save</mat-icon>
 </a>

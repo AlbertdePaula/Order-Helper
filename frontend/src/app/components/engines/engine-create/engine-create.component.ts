@@ -1,5 +1,7 @@
+import { EngineService } from './../../../services/engine.service';
 import { EngineData } from 'src/app/interfaces/Engines';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-engine-create',
@@ -17,9 +19,16 @@ export class EngineCreateComponent implements OnInit {
     rpm: 0
   }
 
-  constructor() { }
+  constructor(private EngineService: EngineService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  createEngine(): void {
+    this.EngineService.create(this.engines).subscribe(() => {
+      this.EngineService.showMessage('Item inserido!')
+      this.router.navigate(['/engines'])
+    })
   }
 
 }
