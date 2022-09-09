@@ -23,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { PartsComponent } from './components/parts/parts.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
+import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { EngineCreateComponent } from './components/engines/engine-create/engine
     PartsComponent,
     OrdersComponent,
     EngineCreateComponent,
+    EngineDetailComponent,
   ],
   imports: [
     MatTableModule,
