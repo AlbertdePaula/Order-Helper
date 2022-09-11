@@ -24,6 +24,7 @@ import { PartsComponent } from './components/parts/parts.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
+import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { EngineDetailComponent } from './components/engines/engine-detail/engine
     OrdersComponent,
     EngineCreateComponent,
     EngineDetailComponent,
+    EngineUpdateComponent
   ],
   imports: [
     MatTableModule,
