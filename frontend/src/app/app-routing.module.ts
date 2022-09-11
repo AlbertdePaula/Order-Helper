@@ -1,3 +1,4 @@
+import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
 import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 import { OrdersComponent } from './components/orders/orders.component';
@@ -21,7 +22,11 @@ const routes: Routes = [
   },
   {
     path: "engines/engine-detail", component: EngineDetailComponent
+  },
+  {
+    path: "engines/engine-update/:id", component: EngineUpdateComponent
   }
+
 ];
 
 @NgModule({

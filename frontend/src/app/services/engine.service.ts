@@ -40,6 +40,10 @@ export class EngineService {
     return EMPTY;
   }
 
+  read(): Observable<EngineData[]> {
+    return this.http.get<EngineData[]>(this.apiUrl)
+  }
+
   readById(id: string): Observable<EngineData> {
     const url = `${this.apiUrl}/${id}`;
     return this.http.get<EngineData>(url).pipe(
@@ -47,4 +51,12 @@ export class EngineService {
       catchError(e => this.errorHandler(e))
     );
   }
+
+  update(engines: EngineData): Observable<EngineData> {
+    const url = `${this.apiUrl}/${engines.id}`
+    return this.http.put<EngineData>(url, engines).pipe(
+      map((obj) => obj),
+      catchError(e => this.errorHandler(e))
+    );
+}
 }
