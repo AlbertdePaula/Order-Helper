@@ -47,6 +47,38 @@
       "current": "20",
       "power": "30",
       "rpm": "50"
+    },
+    {
+      "id": 7,
+      "tag": "mb312004",
+      "description": "bomba morta",
+      "current": "10",
+      "power": "20",
+      "rpm": "12"
+    },
+    {
+      "id": 8,
+      "tag": "vazio",
+      "description": "xurubaca",
+      "current": "010",
+      "power": "20",
+      "rpm": "30"
+    },
+    {
+      "id": 9,
+      "tag": "",
+      "description": "",
+      "current": 0,
+      "power": 0,
+      "rpm": 0
+    },
+    {
+      "id": 10,
+      "tag": "mbtucano2sdsdsd",
+      "description": "sdsdsd",
+      "current": 0,
+      "power": 0,
+      "rpm": 0
     }
   ]
 }
