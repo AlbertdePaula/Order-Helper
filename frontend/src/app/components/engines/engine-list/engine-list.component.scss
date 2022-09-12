@@ -3,24 +3,15 @@ table {
 }
 
 @media (min-width: 700px) {
-  .button-add {
+  a {
     visibility: hidden;
   }
-}
-
-.mat-expansion-panel-header-description{
- // background: green;
-  max-width: 32%;
 }
 
 .button-add {
   position: fixed;
   bottom:  10px;
   right: 10px;
+  z-index: 2;
+  background: rgb(243, 67, 96);
 }
-
-.mat-deader-cell{
-
-}
-
-
