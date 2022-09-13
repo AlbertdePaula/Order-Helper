@@ -1,3 +1,4 @@
+import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
 import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
 import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
@@ -9,22 +10,25 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:"engines/engine-list", component: EngineListComponent
+    path: "engines/engine-list", component: EngineListComponent
   },
   {
-    path:"parts", component: PartsComponent
+    path: "parts", component: PartsComponent
   },
   {
-    path:"orders", component: OrdersComponent
+    path: "orders", component: OrdersComponent
   },
   {
-    path:"engines/engine-create", component: EngineCreateComponent
+    path: "engines/engine-create", component: EngineCreateComponent
   },
   {
     path: "engines/engine-detail", component: EngineDetailComponent
   },
   {
     path: "engines/engine-update/:id", component: EngineUpdateComponent
+  },
+  {
+    path: "engines/engine-delete/:id", component: EngineDeleteComponent
   }
 
 ];

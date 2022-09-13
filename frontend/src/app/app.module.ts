@@ -26,6 +26,11 @@ import { OrdersComponent } from './components/orders/orders.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
 import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
+import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
+
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {MenuItem} from 'primeng/api';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,8 @@ import { EngineUpdateComponent } from './components/engines/engine-update/engine
     OrdersComponent,
     EngineCreateComponent,
     EngineDetailComponent,
-    EngineUpdateComponent
+    EngineUpdateComponent,
+    EngineDeleteComponent
   ],
   imports: [
     MatTableModule,
@@ -54,7 +60,9 @@ import { EngineUpdateComponent } from './components/engines/engine-update/engine
     FormsModule,
     MatFormFieldModule,
     MatSnackBarModule,
-    MatInputModule
+    MatInputModule,
+    AccordionModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,3 +15,33 @@ table {
   z-index: 2;
   background: rgb(243, 67, 96);
 }
+
+.button-edit {
+  background: rgb(93, 200, 250);
+  width: 40px;
+}
+
+.button-delete {
+  background: rgb(252, 120, 120);
+}
+
+.column {
+  width: 100px;
+  padding-left: 10px;
+}
+
+.mat-cell {
+  padding-left: 10px !important;
+  margin-right: 10px;
+
+}
+
+
+
+
+.mat-footer-row,
+.mat-header-row,
+.mat-row {
+    display: inline-flex;
+    min-width: 100%;
+}
