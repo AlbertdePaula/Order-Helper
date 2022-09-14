@@ -5,8 +5,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import{MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatInputModule} from '@angular/material/input';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatInputModule } from '@angular/material/input';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -28,9 +28,10 @@ import { EngineDetailComponent } from './components/engines/engine-detail/engine
 import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
 import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
 
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
-import {MenuItem} from 'primeng/api';
-import {TableModule} from 'primeng/table';
+import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
+import { TableModule } from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
+
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import {TableModule} from 'primeng/table';
     MatSnackBarModule,
     MatInputModule,
     AccordionModule,
-    TableModule
+    TableModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
