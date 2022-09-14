@@ -1,7 +1,7 @@
 import { EngineService } from '../../../services/engine.service';
 import { Component, OnInit } from '@angular/core';
 import { EngineData } from "src/app/interfaces/Engines";
-import { MenuItem } from 'primeng/api'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-engine-list',
@@ -15,7 +15,9 @@ export class EngineListComponent implements OnInit {
 
   panelOpenState = false;
 
-  constructor(private listService: EngineService){
+  nome: string = 'adao';
+
+  constructor(private listService: EngineService, private router: Router){
     this.getEngines();
   }
 
@@ -28,5 +30,12 @@ export class EngineListComponent implements OnInit {
     console.log(this.engines);
   }
 
+  editButton(id: string): void {
+    this.router.navigate([`/engines/engine-update/${id}`]);
+  }
+
+  createButton(): void {
+    this.router.navigate([`/engines/engine-create`])
+  }
 }
 

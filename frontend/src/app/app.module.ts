@@ -30,7 +30,7 @@ import { EngineDeleteComponent } from './components/engines/engine-delete/engine
 
 import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 import { TableModule } from 'primeng/table';
-import {ButtonModule} from 'primeng/button';
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
