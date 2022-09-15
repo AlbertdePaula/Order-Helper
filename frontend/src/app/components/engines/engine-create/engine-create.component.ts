@@ -21,15 +21,11 @@ export class EngineCreateComponent implements OnInit {
 
   constructor(private EngineService: EngineService, private router: Router) { }
   disableButton: boolean = false;
+
   ngOnInit(): void {
   }
 
-  ngOnChangea(): void {
-    if (this.engines.tag === '') {
-      //this.engines.tag = 'vazio';
-      this.disableButton = true;
-      alert('campo vazio!')
-    }
+  ngOnChanges(): void {
   }
 
   createEngine(): void {

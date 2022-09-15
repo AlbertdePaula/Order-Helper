@@ -25,12 +25,12 @@ import { PartsComponent } from './components/parts/parts.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
-import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
 import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
-
+import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
 import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 
 
 @NgModule({
@@ -42,8 +42,8 @@ import { ButtonModule } from 'primeng/button';
     OrdersComponent,
     EngineCreateComponent,
     EngineDetailComponent,
-    EngineUpdateComponent,
-    EngineDeleteComponent
+    EngineDeleteComponent,
+    EngineUpdateComponent
   ],
   imports: [
     MatTableModule,
@@ -64,7 +64,8 @@ import { ButtonModule } from 'primeng/button';
     MatInputModule,
     AccordionModule,
     TableModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

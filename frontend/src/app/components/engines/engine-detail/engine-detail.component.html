@@ -1,1 +1,32 @@
-<p>engine-detail works!</p>
+<a mat-fab color="warn" (click)="cancel()" class="button-back">
+  <mat-icon>arrow_back</mat-icon>
+</a>
+
+<a mat-fab color="warn" (click)="cancel()" class="button-back">
+  <mat-icon>arrow_back</mat-icon>
+</a>
+
+<h5>TAG</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="engines.tag">
+</span>
+
+<h5>Descrição</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="engines.description">
+</span>
+
+<h5>Corrente</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="engines.current">
+</span>
+
+<h5>Potência</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="engines.power">
+</span>
+
+<h5>Rotação</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="engines.rpm">
+</span>

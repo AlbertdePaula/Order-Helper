@@ -22,7 +22,7 @@ const routes: Routes = [
     path: "engines/engine-create", component: EngineCreateComponent
   },
   {
-    path: "engines/engine-detail", component: EngineDetailComponent
+    path: "engines/engine-detail/:id", component: EngineDetailComponent
   },
   {
     path: "engines/engine-update/:id", component: EngineUpdateComponent

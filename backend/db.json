@@ -25,14 +25,6 @@
       "rpm": 3200
     },
     {
-      "id": 4,
-      "tag": "",
-      "description": "",
-      "current": 0,
-      "power": 0,
-      "rpm": 0
-    },
-    {
       "id": 5,
       "tag": "M311001",
       "description": "Bomba de bosta",
@@ -65,20 +57,20 @@
       "rpm": "30"
     },
     {
-      "id": 9,
-      "tag": "",
-      "description": "",
-      "current": 0,
-      "power": 0,
-      "rpm": 0
-    },
-    {
       "id": 10,
       "tag": "M411005",
-      "description": "sdsdsd",
-      "current": 0,
-      "power": 0,
-      "rpm": 0
+      "description": "Bomba de circulação",
+      "current": "50",
+      "power": "20",
+      "rpm": "2800"
+    },
+    {
+      "id": 11,
+      "tag": "MB311004",
+      "description": "Bomba de envio para o filtro",
+      "current": "60",
+      "power": "30",
+      "rpm": "2200"
     }
   ]
 }

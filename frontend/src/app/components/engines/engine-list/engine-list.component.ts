@@ -15,8 +15,6 @@ export class EngineListComponent implements OnInit {
 
   panelOpenState = false;
 
-  nome: string = 'adao';
-
   constructor(private listService: EngineService, private router: Router){
     this.getEngines();
   }

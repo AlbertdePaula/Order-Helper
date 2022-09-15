@@ -1,6 +1,25 @@
 .button-back {
   position: fixed;
+  bottom: 70px;
+  right: 10px;
+  background: #a5a5a5;
+  z-index: 2;
+  color: black;
+}
+
+.button-save {
+  position: fixed;
   bottom:  10px;
   right: 10px;
-  background: #ffc629;
+  background: rgb(3, 179, 3);
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 20px 15px 0px 0px;
 }
