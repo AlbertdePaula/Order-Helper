@@ -41,22 +41,6 @@
       "rpm": "50"
     },
     {
-      "id": 7,
-      "tag": "mb312004",
-      "description": "bomba morta",
-      "current": "10",
-      "power": "20",
-      "rpm": "12"
-    },
-    {
-      "id": 8,
-      "tag": "vazio",
-      "description": "xurubaca",
-      "current": "010",
-      "power": "20",
-      "rpm": "30"
-    },
-    {
       "id": 10,
       "tag": "M411005",
       "description": "Bomba de circulação",
@@ -71,6 +55,14 @@
       "current": "60",
       "power": "30",
       "rpm": "2200"
+    },
+    {
+      "id": 12,
+      "tag": "MB462002",
+      "description": "Bomba de cerveja",
+      "current": "63",
+      "power": "80",
+      "rpm": "2350"
     }
   ]
 }

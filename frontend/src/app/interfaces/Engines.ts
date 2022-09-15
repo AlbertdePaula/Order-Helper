@@ -1,5 +1,5 @@
 export interface EngineData {
-  id?: number;
+  id: number;
   tag: string;
   description: string;
   current: number;

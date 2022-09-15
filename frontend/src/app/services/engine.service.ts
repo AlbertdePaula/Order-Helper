@@ -59,4 +59,12 @@ export class EngineService {
       catchError(e => this.errorHandler(e))
     );
 }
+
+delete(id: number): Observable<EngineData> {
+  const url = `${this.apiUrl}/${id}`;
+  return this.http.delete<EngineData>(url).pipe(
+    map((obj) => obj),
+    catchError(e => this.errorHandler(e))
+  );
+}
 }

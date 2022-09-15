@@ -1,6 +1,5 @@
 import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
 import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
-import { EngineDetailComponent } from './components/engines/engine-detail/engine-detail.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { PartsComponent } from './components/parts/parts.component';
@@ -20,9 +19,6 @@ const routes: Routes = [
   },
   {
     path: "engines/engine-create", component: EngineCreateComponent
-  },
-  {
-    path: "engines/engine-detail/:id", component: EngineDetailComponent
   },
   {
     path: "engines/engine-update/:id", component: EngineUpdateComponent

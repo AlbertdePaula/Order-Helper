@@ -15,6 +15,14 @@
   color: black;
 }
 
+.button-delete {
+  position: fixed;
+  bottom:  10px;
+  right: 70px;
+  background: rgb(247, 52, 52);
+  color: black;
+}
+
 form {
   display: flex;
   flex-direction: column;

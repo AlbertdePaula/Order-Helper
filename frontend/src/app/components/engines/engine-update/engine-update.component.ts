@@ -38,7 +38,12 @@ export class EngineUpdateComponent implements OnInit {
     })
   }
 
-  cancel(): void {
+  cancelButton(): void {
     this.router.navigate(['/engines/engine-list'])
   }
+
+  deleteButton(id: number): void {
+    this.router.navigate([`/engines/engine-delete/${id}`])
+  }
+
 }

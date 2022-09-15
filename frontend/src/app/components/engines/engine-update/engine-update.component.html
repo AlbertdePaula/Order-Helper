@@ -2,8 +2,12 @@
   <mat-icon>save</mat-icon>
 </a>
 
-<a mat-fab color="warn" (click)="cancel()" class="button-back">
+<a mat-fab color="warn" (click)="cancelButton()" class="button-back">
   <mat-icon>arrow_back</mat-icon>
+</a>
+
+<a mat-fab color="warn" (click)="deleteButton(engines.id)" class="button-delete">
+  <mat-icon>delete</mat-icon>
 </a>
 
 <h5>TAG</h5>
