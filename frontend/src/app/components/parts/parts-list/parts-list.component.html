@@ -1,0 +1,23 @@
+<div class="card">
+  <p-table responsiveLayout="scroll" [value]="part">
+      <ng-template pTemplate="caption">
+          Scroll
+      </ng-template>
+      <ng-template pTemplate="header" let-columns>
+          <tr>
+              <th>Código </th>
+              <th>Descrição</th>
+              <th>Locação</th>
+              <th>Area</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-part let-columns="columns">
+          <tr>
+              <td>{{part.code}}</td>
+              <td>{{part.description}}</td>
+              <td>{{part.location}}</td>
+              <td>{{part.area}}</td>
+          </tr>
+      </ng-template>
+  </p-table>
+</div>

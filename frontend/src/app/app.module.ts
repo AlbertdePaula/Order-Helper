@@ -21,7 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './components/template/nav-bar/nav-bar.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
-import { PartsComponent } from './components/parts/parts.component';
 import { EngineCreateComponent } from './components/engines/engine-create/engine-create.component';
 import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
 import { EngineUpdateComponent } from './components/engines/engine-update/engine-update.component';
@@ -32,6 +31,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import { OrdersCreateComponent } from './components/orders/orders-create/orders-create.component';
+import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
 
 
 @NgModule({
@@ -39,11 +39,11 @@ import { OrdersCreateComponent } from './components/orders/orders-create/orders-
     AppComponent,
     EngineListComponent,
     NavBarComponent,
-    PartsComponent,
     EngineCreateComponent,
     EngineDeleteComponent,
     EngineUpdateComponent,
-    OrdersCreateComponent
+    OrdersCreateComponent,
+    PartsListComponent
   ],
   imports: [
     MatTableModule,
