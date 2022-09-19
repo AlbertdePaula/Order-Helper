@@ -19,7 +19,7 @@ export class EngineCreateComponent implements OnInit {
     rpm: 0
   }
 
-  constructor(private EngineService: EngineService, private router: Router) { }
+  constructor(private engineService: EngineService, private router: Router) { }
   disableButton: boolean = false;
 
   ngOnInit(): void {
@@ -35,8 +35,8 @@ export class EngineCreateComponent implements OnInit {
       alert('campo vazio!')
     }
     else
-    this.EngineService.create(this.engines).subscribe(() => {
-      this.EngineService.showMessage('Item inserido!')
+    this.engineService.create(this.engines).subscribe(() => {
+      this.engineService.showMessage('Item inserido!')
       this.router.navigate(['/engines'])
     })
   }

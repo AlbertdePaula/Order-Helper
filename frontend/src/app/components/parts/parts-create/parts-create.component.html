@@ -1,0 +1,29 @@
+<!-- <a mat-fab color="warn" (click)="cancel()" class="button-back">
+  <mat-icon>arrow_back</mat-icon>
+</a> -->
+
+<h5>Código</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="part.code">
+</span>
+
+<h5>Descrição</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="part.description">
+</span>
+
+<h5>Locação</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="part.location">
+</span>
+
+<h5>Área</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="part.area">
+</span>
+
+<a mat-fab color="warn" (click)="createPart()" class="button-save">
+  <mat-icon>save</mat-icon>
+</a>
+
+<!-- <a mat-fab class="button-back" (click)="cancel()">Voltar</a> -->

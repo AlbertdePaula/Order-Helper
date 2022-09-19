@@ -32,6 +32,7 @@ import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import { OrdersCreateComponent } from './components/orders/orders-create/orders-create.component';
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
+import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PartsListComponent } from './components/parts/parts-list/parts-list.com
     EngineDeleteComponent,
     EngineUpdateComponent,
     OrdersCreateComponent,
-    PartsListComponent
+    PartsListComponent,
+    PartsCreateComponent
   ],
   imports: [
     MatTableModule,

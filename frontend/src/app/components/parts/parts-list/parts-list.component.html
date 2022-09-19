@@ -8,7 +8,7 @@
               <th>Código </th>
               <th>Descrição</th>
               <th>Locação</th>
-              <th>Area</th>
+              <th>Área</th>
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-part let-columns="columns">
@@ -21,3 +21,7 @@
       </ng-template>
   </p-table>
 </div>
+
+<a mat-fab color="warn" (click)="createButton()" class="button-add">
+  <mat-icon>add</mat-icon>
+</a>
