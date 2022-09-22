@@ -7,14 +7,14 @@
           <tr>
               <th>Tag </th>
               <th>Descrição</th>
-              <th>Ações</th>
+              <th *ngIf="innerWidth > 700">Ações</th>
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-engines let-columns="columns">
-          <tr>
+          <tr (click)="editButton(engines.id)">
               <td>{{engines.tag}}</td>
               <td>{{engines.description}}</td>
-              <td>
+              <td *ngIf="innerWidth > 700">
                 <button pButton type="button" label="Detail" (click)="editButton(engines.id)"></button>
             </td>
           </tr>

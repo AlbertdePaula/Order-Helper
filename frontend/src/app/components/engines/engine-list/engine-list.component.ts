@@ -2,6 +2,7 @@ import { EngineService } from '../../../services/engine.service';
 import { Component, OnInit } from '@angular/core';
 import { EngineData } from "src/app/interfaces/Engines";
 import { Router } from '@angular/router';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-engine-list',
@@ -11,17 +12,23 @@ import { Router } from '@angular/router';
 export class EngineListComponent implements OnInit {
   engines: EngineData[] = [];
 
-  displayedColumns = ['tag','description','actions'];
+  displayedColumns = ['tag', 'description', 'actions'];
 
   panelOpenState = false;
 
-  constructor(private listService: EngineService, private router: Router){
+  constructor(private listService: EngineService, private router: Router) {
     this.getEngines();
   }
 
-  ngOnInit(): void {
-    console.log(this.engines);
+  public innerWidth: any;
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
   }
+
+  @HostListener('window:resize', ['$event'])
+onResize(event: any) {
+  this.innerWidth = window.innerWidth;
+}
 
   getEngines(): void {
     this.listService.getAll().subscribe((engines) => (this.engines = engines));
@@ -34,6 +41,10 @@ export class EngineListComponent implements OnInit {
 
   createButton(): void {
     this.router.navigate([`/engines/engine-create`])
+  }
+
+  show(): void {
+    alert("Deu certo")
   }
 }
 

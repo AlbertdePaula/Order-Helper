@@ -2,15 +2,12 @@ table {
   width: 100%;
 }
 
-@media (min-width: 700px) {
-  a {
-    visibility: hidden;
-  }
+@media (max-width: 700px) {
 }
 
 .button-add {
   position: fixed;
-  bottom:  10px;
+  bottom: 10px;
   right: 10px;
   z-index: 2;
   background: rgb(243, 67, 96);
