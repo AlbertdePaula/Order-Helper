@@ -12,9 +12,15 @@
       "description": "Sensor IFT203",
       "area": "Brassagem",
       "location": "P12.D5.E2"
+    },
+    {
+      "id": 2,
+      "code": "50003856",
+      "description": "CAbo M12",
+      "location": "P.32.A.4",
+      "area": "Adegas"
     }
   ],
-
   "engines": [
     {
       "id": 1,
