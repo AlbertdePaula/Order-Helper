@@ -24,6 +24,7 @@ export class EngineUpdateComponent implements OnInit {
   ngOnInit(): void {
     let id = this.route.snapshot.paramMap.get('id');
 
+
     if (id) {
       this.engineService.readById(id).subscribe(engines => {
         this.engines = engines;
@@ -42,7 +43,7 @@ export class EngineUpdateComponent implements OnInit {
     this.router.navigate(['/engines/engine-list'])
   }
 
-  deleteButton(id: number): void {
+  deleteButton(id: string): void {
     this.router.navigate([`/engines/engine-delete/${id}`])
   }
 

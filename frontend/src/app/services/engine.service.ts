@@ -60,7 +60,7 @@ export class EngineService {
     );
 }
 
-delete(id: number): Observable<EngineData> {
+delete(id: string): Observable<EngineData> {
   const url = `${this.apiUrl}/${id}`;
   return this.http.delete<EngineData>(url).pipe(
     map((obj) => obj),

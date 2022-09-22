@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class EngineCreateComponent implements OnInit {
 
   engines: EngineData = {
-    id: 0,
+    id: '',
     tag: '',
     description: '',
     current: 0,

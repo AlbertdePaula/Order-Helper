@@ -8,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   providedIn: 'root'
 })
 export class PartsService {
-  private apiUrl = 'http://localhost:3002/parts';
+  private apiUrl = 'http://localhost:3333/parts';
 
   constructor(private http: HttpClient, private MatSnackBar: MatSnackBar) { }
 
