@@ -9,7 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 
 export class EngineService {
-  private apiUrl = 'https://order-helper.herokuapp.com/engines/';
+  private apiUrl = 'https://order-helper.herokuapp.com/engines';
   //private apiUrl = 'http://localhost:3333/engines';
 
   constructor(private http: HttpClient, private MatSnackBar: MatSnackBar) { }
