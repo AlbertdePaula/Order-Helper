@@ -1,5 +1,5 @@
 export interface PartData {
-  id: number;
+  id: string;
   code: number;
   description: string;
   location: string;

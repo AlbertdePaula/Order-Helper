@@ -1,3 +1,4 @@
+import { PartUpadateComponent } from './components/parts/part-upadate/part-upadate.component';
 import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
 import { EngineDeleteComponent } from './components/engines/engine-delete/engine-delete.component';
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: "parts/parts-create", component: PartsCreateComponent
+  },
+  {
+    path: "parts/part-update/:id", component: PartUpadateComponent
   }
 
 ];

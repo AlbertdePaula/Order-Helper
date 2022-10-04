@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class PartsCreateComponent implements OnInit {
 
   part: PartData = {
-    id: 0,
+    id: '',
     code: 0,
     description: '',
     location: '',

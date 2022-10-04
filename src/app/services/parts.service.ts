@@ -23,6 +23,14 @@ export class PartsService {
     );
   }
 
+  update(parts: PartData): Observable<PartData> {
+    const url = `${this.apiUrl}/${parts.id}`
+    return this.http.put<PartData>(url, parts).pipe(
+      map((obj) => obj),
+      catchError(e => this.errorHandler(e))
+    );
+}
+
   errorHandler(e: any): Observable<any> {
     this.showMessage('Ocorreu um erro!', true);
     alert('Backand tá funcionando não meu fii')

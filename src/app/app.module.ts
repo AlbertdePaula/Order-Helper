@@ -33,8 +33,13 @@ import { MessageModule } from 'primeng/message';
 import { OrdersCreateComponent } from './components/orders/orders-create/orders-create.component';
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
 import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
+<<<<<<< HEAD
 import { PartsEditComponent } from './components/parts/parts-edit/parts-edit.component';
 import { LoginComponent } from './components/template/login/login/login.component';
+=======
+import { PartsEditComponent } from './components/parts/parts-update/parts-edit.component';
+import { PartUpadateComponent } from './components/parts/part-upadate/part-upadate.component';
+>>>>>>> f75788aba28e7f8b06d5ac4e5a82aab000c0f275
 
 
 @NgModule({
@@ -49,7 +54,11 @@ import { LoginComponent } from './components/template/login/login/login.componen
     PartsListComponent,
     PartsCreateComponent,
     PartsEditComponent,
+<<<<<<< HEAD
     LoginComponent
+=======
+    PartUpadateComponent
+>>>>>>> f75788aba28e7f8b06d5ac4e5a82aab000c0f275
   ],
   imports: [
     MatTableModule,
