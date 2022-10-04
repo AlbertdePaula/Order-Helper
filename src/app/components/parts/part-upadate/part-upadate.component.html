@@ -1,0 +1,33 @@
+<a mat-fab color="warn" (click)="updatePart()" class="button-save">
+  <mat-icon>save</mat-icon>
+</a>
+
+<a mat-fab color="warn" (click)="cancelButton()" class="button-back">
+  <mat-icon>arrow_back</mat-icon>
+</a>
+
+<a mat-fab color="warn" (click)="deleteButton(part.id)" class="button-delete">
+  <mat-icon>delete</mat-icon>
+</a>
+
+<h5>Código</h5>
+<span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="part.code">
+</span>
+
+<h5>Descrição</h5>
+<span class="p-float-label">
+    <input id="float-input" type="number" pInputText [(ngModel)]="part.description">
+</span>
+
+<h5>Locação</h5>
+<span class="p-float-label">
+    <input id="float-input" type="number" pInputText [(ngModel)]="part.location">
+</span>
+
+<h5>Rotação</h5>
+<span class="p-float-label">
+    <input id="float-input" type="number" pInputText [(ngModel)]="part.area">
+</span>
+
+
