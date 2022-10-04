@@ -27,13 +27,14 @@ import { EngineUpdateComponent } from './components/engines/engine-update/engine
 import { AccordionModule } from 'primeng/accordion';     //accordion and accordion tab
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
-import {InputTextModule} from 'primeng/inputtext';
-import {MessagesModule} from 'primeng/messages';
-import {MessageModule} from 'primeng/message';
+import { InputTextModule } from 'primeng/inputtext';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 import { OrdersCreateComponent } from './components/orders/orders-create/orders-create.component';
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
 import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
 import { PartsEditComponent } from './components/parts/parts-edit/parts-edit.component';
+import { LoginComponent } from './components/template/login/login/login.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { PartsEditComponent } from './components/parts/parts-edit/parts-edit.com
     OrdersCreateComponent,
     PartsListComponent,
     PartsCreateComponent,
-    PartsEditComponent
+    PartsEditComponent,
+    LoginComponent
   ],
   imports: [
     MatTableModule,

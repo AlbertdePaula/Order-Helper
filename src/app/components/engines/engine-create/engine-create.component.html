@@ -14,17 +14,17 @@
 
 <h5>Corrente</h5>
 <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [(ngModel)]="engines.current">
+    <input id="float-input" type="number" pInputText [(ngModel)]="engines.current">
 </span>
 
 <h5>Potência</h5>
 <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [(ngModel)]="engines.power">
+    <input id="float-input" type="number" pInputText [(ngModel)]="engines.power">
 </span>
 
 <h5>Rotação</h5>
 <span class="p-float-label">
-    <input id="float-input" type="text" pInputText [(ngModel)]="engines.rpm">
+    <input id="float-input" type="number" pInputText [(ngModel)]="engines.rpm">
 </span>
 
 <a mat-fab color="warn" (click)="createEngine()" class="button-save">

@@ -1,3 +1,4 @@
+import { MatButtonModule } from '@angular/material/button';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EngineCreateComponent } from './engine-create.component';
@@ -8,6 +9,7 @@ describe('EngineCreateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [MatButtonModule ],
       declarations: [ EngineCreateComponent ]
     })
     .compileComponents();

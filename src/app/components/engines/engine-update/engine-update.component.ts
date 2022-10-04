@@ -34,7 +34,7 @@ export class EngineUpdateComponent implements OnInit {
 
   updateEngine(): void {
     this.engineService.update(this.engines).subscribe(() => {
-      this.engineService.showMessage('Produto atualizado com sucesso!');
+      this.engineService.showMessage('Equipamento atualizado com sucesso!');
       this.router.navigate(['/engines']);
     })
   }
