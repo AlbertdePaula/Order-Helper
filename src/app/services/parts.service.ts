@@ -8,7 +8,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   providedIn: 'root'
 })
 export class PartsService {
-  private apiUrl = 'https://order-helper.herokuapp.com/parts/';
+  //private apiUrl = 'https://order-helper.herokuapp.com/parts/';
+  private apiUrl = 'http://localhost:3000/parts';
 
   constructor(private http: HttpClient, private MatSnackBar: MatSnackBar) { }
 
@@ -29,6 +30,14 @@ export class PartsService {
       map((obj) => obj),
       catchError(e => this.errorHandler(e))
     );
+}
+
+readById(id: string): Observable<PartData> {
+  const url = `${this.apiUrl}/${id}`;
+  return this.http.get<PartData>(url).pipe(
+    map((obj) => obj),
+    catchError(e => this.errorHandler(e))
+  );
 }
 
   errorHandler(e: any): Observable<any> {

@@ -12,7 +12,7 @@
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-part let-columns="columns">
-          <tr>
+          <tr (click)="editButton(part.id)">
               <td>{{part.code}}</td>
               <td>{{part.description}}</td>
               <td>{{part.location}}</td>

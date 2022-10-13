@@ -33,7 +33,7 @@ import { MessageModule } from 'primeng/message';
 import { OrdersCreateComponent } from './components/orders/orders-create/orders-create.component';
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
 import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
-import { PartUpadateComponent } from './components/parts/part-upadate/part-upadate.component';
+import { PartUpdateComponent } from './components/parts/part-update/part-update.component';
 
 
 @NgModule({
@@ -47,7 +47,7 @@ import { PartUpadateComponent } from './components/parts/part-upadate/part-upada
     OrdersCreateComponent,
     PartsListComponent,
     PartsCreateComponent,
-    PartUpadateComponent
+    PartUpdateComponent
   ],
   imports: [
     MatTableModule,

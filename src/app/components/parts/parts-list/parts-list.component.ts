@@ -27,4 +27,8 @@ export class PartsListComponent implements OnInit {
   createButton(): void {
     this.router.navigate([`parts/parts-create`])
   }
+
+  editButton(id:string): void {
+    this.router.navigate([`/parts/part-update/${id}`])
+  }
 }

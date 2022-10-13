@@ -1,18 +1,17 @@
+import { PartUpdateComponent } from './part-update.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PartsEditComponent } from './parts-edit.component';
-
-describe('PartsEditComponent', () => {
-  let component: PartsEditComponent;
-  let fixture: ComponentFixture<PartsEditComponent>;
+describe('PartUpdateComponent', () => {
+  let component: PartUpdateComponent;
+  let fixture: ComponentFixture<PartUpdateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PartsEditComponent ]
+      declarations: [ PartUpdateComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PartsEditComponent);
+    fixture = TestBed.createComponent(PartUpdateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
