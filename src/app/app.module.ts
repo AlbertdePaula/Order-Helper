@@ -34,6 +34,8 @@ import { OrdersCreateComponent } from './components/orders/orders-create/orders-
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
 import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
 import { PartUpdateComponent } from './components/parts/part-update/part-update.component';
+import { OrdersExecutingComponent } from './components/orders/orders-executing/orders-executing.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -47,7 +49,8 @@ import { PartUpdateComponent } from './components/parts/part-update/part-update.
     OrdersCreateComponent,
     PartsListComponent,
     PartsCreateComponent,
-    PartUpdateComponent
+    PartUpdateComponent,
+    OrdersExecutingComponent
   ],
   imports: [
     MatTableModule,
@@ -71,7 +74,8 @@ import { PartUpdateComponent } from './components/parts/part-update/part-update.
     ButtonModule,
     InputTextModule,
     MessagesModule,
-    MessageModule
+    MessageModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

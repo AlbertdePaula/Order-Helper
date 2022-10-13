@@ -1,3 +1,4 @@
+import { OrdersExecutingComponent } from './components/orders/orders-executing/orders-executing.component';
 import { PartUpdateComponent } from './components/parts/part-update/part-update.component';
 import { PartsCreateComponent } from './components/parts/parts-create/parts-create.component';
 import { PartsListComponent } from './components/parts/parts-list/parts-list.component';
@@ -29,6 +30,9 @@ const routes: Routes = [
   },
   {
     path: "parts/part-update/:id", component: PartUpdateComponent
+  },
+  {
+    path: "orders/orders-executing", component: OrdersExecutingComponent
   }
 
 ];
