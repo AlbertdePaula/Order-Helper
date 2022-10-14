@@ -1,7 +1,7 @@
 import { Router, ActivatedRoute } from '@angular/router';
 import { PartData } from '../../../interfaces/Part';
 import { Component, OnInit } from '@angular/core';
-import { PartsService } from 'src/app/services/parts.service';
+import { PartsService } from 'src/app/services/parts/parts.service';
 
 @Component({
   selector: 'app-part-update',

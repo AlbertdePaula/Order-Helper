@@ -1,5 +1,23 @@
-<mat-tab-group [dataSource]="engines" mat-align-tabs="start">
-  <mat-tab label="First">{{engines.description}}</mat-tab>
-  <mat-tab label="Second">Content 2</mat-tab>
-  <mat-tab label="Third">Content 3</mat-tab>
+<ng-container *ngIf="(asyncTabs | async) === null">
+  Loading tabs...
+</ng-container>
+
+<mat-tab-group>
+  <mat-tab *ngFor="let tab of asyncTabs | async">
+    <ng-template mat-tab-label>{{tab.orderNumber}}</ng-template>
+    {{tab.description}}
+  </mat-tab>
 </mat-tab-group>
+
+
+
+
+
+<!-- <mat-tab-group  [origin]="order" class="mat-elevation-Z8">
+
+  <ng-container matColumnDef="tag">
+    <th mat-header-cell class="column" *matHeaderCellDef> Tag </th>
+    <td mat-cell *matCellDef="let element"> {{element.tag}}</td>
+  </ng-container>
+
+</table> -->

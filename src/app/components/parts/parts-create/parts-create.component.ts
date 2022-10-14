@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { PartsService } from './../../../services/parts.service';
+import { PartsService } from './../../../services/parts/parts.service';
 import { PartData } from './../../../interfaces/Part';
 import { Component, OnInit } from '@angular/core';
 

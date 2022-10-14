@@ -1,4 +1,4 @@
-import { PartsService } from './../../../services/parts.service';
+import { PartsService } from './../../../services/parts/parts.service';
 import { PartData } from 'src/app/interfaces/Part';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';

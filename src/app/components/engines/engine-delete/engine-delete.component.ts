@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EngineData } from 'src/app/interfaces/Engines';
-import { EngineService } from 'src/app/services/engine.service';
+import { EngineService } from 'src/app/services/engines/engine.service';
 import { Route, ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 

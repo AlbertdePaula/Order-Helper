@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PartData } from '../interfaces/Part';
+import { PartData } from 'src/app/interfaces/Part';
 import { HttpClient } from '@angular/common/http';
 import { Observable, catchError, map, EMPTY } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
