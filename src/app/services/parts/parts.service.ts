@@ -8,8 +8,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   providedIn: 'root'
 })
 export class PartsService {
-  //private apiUrl = 'https://order-helper.herokuapp.com/parts/';
-  private apiUrl = 'http://localhost:3000/parts';
+  private apiUrl = 'https://order-helper.herokuapp.com/parts/';
+  //private apiUrl = 'http://localhost:3000/parts';
 
   constructor(private http: HttpClient, private MatSnackBar: MatSnackBar) { }
 
